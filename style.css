@@ -704,6 +704,18 @@ footer:before{
 
 /* SHAPES */
 
+.fa-square{
+  color: #DB3EB1;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  text-shadow: -0.5px 0 #DB3EB1, 0 0.5px #DB3EB1, 0.5px 0 #DB3EB1, 0 -0.5px #DB3EB1;
+}
+
+.fa-square path {
+  stroke: black;
+  stroke-width: 100;
+}
+
 .shape{
   position: fixed;
   z-index: 0;
@@ -824,8 +836,9 @@ footer:before{
 
   .shape--1,
   .shape--5,
+  .shape--3,
   .shape--7{
-    animation: animate__shape--even 2500ms infinite linear;
+    animation: animate__shape--even 5000ms infinite linear;
   }
 
   .title{
