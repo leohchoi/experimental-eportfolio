@@ -1,0 +1,287 @@
+<!-- https://cdna.iconscout.com/img/react.9ae8ac1.svg -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="./exp__eport/bold__logo__resized.png">
+    <title>Leo Choi</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("LJ_WiUwXTNdQQz2dg");
+      })();
+    </script>
+  </head>
+  <body onmousemove="moveBackground(event)">
+    <section id="landing-page"> 
+      <!-- the event holds mouse location -->
+      <nav>
+        <figure class="logo">
+          <img
+            id="personal-logo"
+            src="./exp__eport/output-onlinepngtools.png"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Project</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            >
+              <i class="fas fa-adjust"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <figure class="my__picture--mask">
+          <img src="./exp__eport/leo2.png" alt="" class="my__picture">
+        </figure>
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title"><span class="green">I'm Leo</span></h1>
+          <p class="header__para">
+            I'm an <span class="green">aspiring software engineer</span> at
+            University of Michigan with a spirited passion for building
+            applications to positively impact the world!
+            <br />
+            Here's more to know <span class="green click" onclick="toggleModal()">about me.</span>
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/leo-choi-44a82b173"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/leohchoi"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="./exp__eport/LeoChoiResumeUpdate.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's more to know about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Aspiring Software Engineer
+          </h4>
+          <p class="modal__para">
+            I'm currently a rising junior at University of Michigan majoring in <span class="green">Computer Science.</span> Learning C++ at school
+            while doing frontend during my free time.
+            <br>
+            
+            My goal is to create applications to futher innovation and benefit
+            the lives around me through it!
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://user-images.githubusercontent.com/42747200/46140125-da084900-c26d-11e8-8ea7-c45ae6306309.png"
+                alt=""
+              />
+              <span class="language__name">C++</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://camo.githubusercontent.com/d665435625c7b27b5616f4a59fd34de958c7ec69a7c15a73f1f7df9c4d29abc0/68747470733a2f2f63646e2e69636f6e2d69636f6e732e636f6d2f69636f6e73322f323130382f504e472f3531322f6a6176617363726970745f69636f6e5f3133303930302e706e67"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://cdna.iconscout.com/img/react.9ae8ac1.svg"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            Currently Open to New Opportunities.
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input type="text" name="user__name" class="input" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input type="email" name="user__email" class="input" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea type="text" name="message" class="input" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+      <img src="./exp__eport/semi circle.svg" class="shape shape--0">
+      <img src="./exp__eport/circle.svg" class="shape shape--1">
+      <img src="./exp__eport/squiggly.svg" class="shape shape--2">
+      <img src="./exp__eport/circle.svg" class="shape shape--3">
+      <img src="./exp__eport/triangle.svg" class="shape shape--4">
+      <img src="./exp__eport/circle.svg" class="shape shape--5">
+      <img src="./exp__eport/squiggly.svg" class="shape shape--6">
+      <img src="./exp__eport/circle.svg" class="shape shape--7">
+      <img src="./exp__eport/semi circle.svg" class="shape shape--8">
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="green">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./exp__eport/undraw_playing_cards_474.svg"
+                  class="project__img"
+                  alt=""
+                  loading="lazy"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Euchre</h3>
+                  <h4 class="project__description--sub-title">C++</h4>
+                  <p class="project__description--para">
+                    Euchre is a card game that is popular in Michigan. I coded
+                    this game so that you can play against either other players
+                    or against an AI.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="" class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <!-- container gives padding to top/bottom whiel row is for left/right -->
+        <div class="row footer__row">
+          <figure>
+            <img
+              src="./exp__eport/bold__logo__resized.png"
+              class="footer__logo--img"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/leohchoi" target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/leo-choi-44a82b173" target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Linkedin</a
+            >
+            <a
+              href="#" onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Contact</a
+            >
+            <a
+              href="./exp__eport/LeoChoiResumeUpdate.pdf" target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Resume</a
+            >
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2022 Leo Choi</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
